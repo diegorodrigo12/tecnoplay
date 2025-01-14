@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnoplay hardware</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #333;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 1rem 0;
+            align-items: center;
+            /* Alinha verticalmente */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding-left: 23rem;
+            /* Espaçamento à esquerda */
+            display: flex;
+
+        }
+
+        header img {
+            width: 120px;
+            /* Ajuste o tamanho da logo */
+            height: auto;
+            /* Garante proporção correta */
+
+        }
+
+        header h1 {
+            font-size: 2.0rem;
+            margin: 0;
+            padding: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+        }
+
+        header h2 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 2.0rem;
+            margin: 0;
+            padding: 0;
+            padding-left: 0.3rem;
+            /* Espaçamento à esquerda */
+
+        }
+
+        nav {
+            background-color: #34495e;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem 0;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ecf0f1;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #3498db;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 0.2rem auto;
+            padding: 1rem;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 5rem 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+
+        footer img {
+            width: 120px;
+            /* Ajuste o tamanho da logo */
+            height: auto;
+            /* Garante proporção correta */
+        }
+
+
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1rem;
+            width: 200px;
+            text-align: center;
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .product-card .logo {
+            position: relative;
+            top: 5px;
+            right: 5px;
+            width: 40px;
+            height: 40px;
+        }
+
+        .product-card .logo img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+        }
+
+        .product-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-card p {
+            color: #e69808;
+            font-weight: bold;
+
+        }
+
+        .product-card a {
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .product-card h5 {
+            margin-bottom: 1rem;
+        }
+
+
+        .product-card a:hover {
+            color: #2980b9;
+
+        }
+
+
+
+        .social-links {
+            color: #3498db;
+
+            padding-left: 40rem;
+            /* Espaçamento à esquerda */
+        }
+
+        .social-links img {
+            width: 7%;
+
+        }
+
+        .social-links a:hover {
+            color: #3498db;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                padding: 1rem;
+            }
+
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+
+            .content {
+                padding: 1rem;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <img src="c:\Users\tecno\OneDrive\Área de Trabalho\Site\img\logo.png" alt="Logo Tecnoplay">
+        <!-- Substitua pelo caminho da sua logo -->
+        <h1>Tecnoplay</h1>
+        <h2>Hardware</h2>
+        <!-- Redes Sociais -->
+        <div class="social-links">
+            <div>
+                <a href="https://www.youtube.com" target="_blank">
+                    <img src="c:\Users\tecno\OneDrive\Área de Trabalho\Site\img\icons8-reproduzir-youtube-240.png"
+                        alt="YouTube">
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="c:\Users\tecno\OneDrive\Área de Trabalho\Site\img\icons8-facebook-240 (1).png"
+                        alt="facebook">
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="c:\Users\tecno\OneDrive\Área de Trabalho\Site\img\icons8-instagram-240.png"
+                        alt="instagram">
+                </a>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" onclick="navigate('home')">Início</a></li>
+            <li><a href="#" onclick="navigate('about')">Sobre</a></li>
+            <li><a href="#" onclick="navigate('contact')">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <!-- Adicione esta seção dentro da div com a classe "content" -->
+    <div style="display: flex; justify-content: center; gap: 0.2rem; margin-top: 1rem;">
+        <input type="text" id="search-bar" placeholder="Digite o nome do produto..."
+            style="width: 52%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px;">
+
+        <select id="filter-dropdown"
+            style="padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px; background-color: #fff;">
+            <option value="">Filtros</option>
+            <option value="Kabum">Kabum</option>
+            <option value="Amazon">Amazon</option>
+            <option value="Terabyteshop">Terabyteshop</option>
+            <option value="Patoloco">Patoloco</option>
+            <option value="Pichau">Pichau</option>
+        </select>
+
+        <button onclick="searchProducts()"
+            style="padding: 0.8rem 1rem; background-color: #3498db; color: white; border: none; border-radius: 4px; cursor: pointer;">Buscar</button>
+    </div>
+
+    <!-- Produtos em Destaque (já existente) -->
+    <div id="product-container" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+        <!-- Os produtos já inseridos no código continuam aqui -->
+    </div>
+
+    <script>
+        function searchProducts() {
+            const searchQuery = document.getElementById('search-bar').value.toLowerCase();
+            const filterValue = document.getElementById('filter-dropdown').value;
+            const products = document.querySelectorAll('.product-card');
+
+            products.forEach(product => {
+                const productName = product.querySelector('h3').innerText.toLowerCase();
+                const productCategory = product.getAttribute('data-category');
+
+                const matchesSearch = productName.includes(searchQuery);
+                const matchesFilter = !filterValue || productCategory === filterValue;
+
+                if (matchesSearch && matchesFilter) {
+                    product.style.display = 'block'; // Mostra o produto que corresponde
+                } else {
+                    product.style.display = 'none'; // Oculta o produto que não corresponde
+                }
+            });
+        }
+    </script>
+
+    <div class="content" id="content">
+        <h2>Bem-vindo ao Tecnoplay Hardware</h2>
+        <br>
+        <!-- Produtos em Destaque -->
+        <h2>Produtos em Destaque</h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+            <div class="product-card" data-category="Amazon">
+                <div class="logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo">
+                </div>
+                <img src="https://m.media-amazon.com/images/I/712MufLY2fL._AC_SX679_.jpg"
+                    alt="Placa Mãe Gigabyte B450M Gaming, Chipset B450, AMD AM4, mATX, DDR4">
+                <h3>Placa Mãe Gigabyte B450M Gaming, Chipset B450, AM4, DDR4</h3>
+                <p>R$ 535,00</p>
+                <h5>À vista no PIX com 15% OFF</h5>
+                <a href="https://www.amazon.com.br/PLACA-M%C3%83E-GIGABYTE-GAMING-2XDDR4-DVI-D/dp/B07K787MXX/ref=asc_df_B07K787MXX/?tag=googleshopp00-20&linkCode=df0&hvadid=709884378163&hvpos=&hvnetw=g&hvrand=4424600598454748760&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9100519&hvtargid=pla-606448497250&psc=1&mcid=c131a1e7891930b593ec02d69292e3d2&gad_source=1"
+                    target="_blank">Ver Produto</a>
+            </div>
+            <div class="product-card" data-category="Kabum">
+                <div class="logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/KaBuM%21_Logo.png/640px-KaBuM%21_Logo.png"
+                        alt="Kabum Logo">
+                </div>
+                <img src="https://images4.kabum.com.br/produtos/fotos/333154/processador-amd-ryzen-5-4500-cache-11mb-3-6ghz-4-1ghz-max-turbo-am4-sem-video-100-100000644box_1652381901_g.jpg"
+                    alt="Processador AMD Ryzen 5 4500">
+                <h3>Processador AMD Ryzen 5 4500</h3>
+                <p>R$ 479,99</p>
+                <h5>À vista no PIX com 15% OFF</h5>
+                <a href="https://www.kabum.com.br/produto/333154/processador-amd-ryzen-5-4500-3-6ghz-4-1ghz-max-turbo-cache-11mb-am4-sem-video-100-100000644box?srsltid=AfmBOoqUU5Ov7tL-9fh91YMK1upRKFDwe5nSR9QhXFd3sf_BMF-a17KnQtI"
+                    target="_blank">Ver Produto</a>
+            </div>
+            <div class="product-card" data-category="Kabum">
+                <div class="logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/KaBuM%21_Logo.png/640px-KaBuM%21_Logo.png"
+                        alt="Kabum Logo">
+                </div>
+                <img src="https://images4.kabum.com.br/produtos/fotos/474524/gabinete-gamer-rise-mode-wave-white-mid-tower-argb-atx-3-cooler-fan-argb-branco-rm-wa-bw-argb_1707133829_g.jpg"
+                    alt="Gabinete Gamer Rise Mode Wave White, Mid Tower">
+                <h3>Gabinete Gamer Rise Mode White</h3>
+                <p>R$ 219,90</p>
+                <h5>À vista no PIX com 15% OFF</h5>
+                <a href="https://www.kabum.com.br/produto/474524/gabinete-gamer-rise-mode-wave-white-mid-tower-lateral-em-vidro-fume-argb-atx-3-cooler-fan-argb-branco-rm-wa-bw-argb"
+                    target="_blank">Ver Produto</a>
+            </div>
+            <div class="product-card" data-category="Kabum">
+                <div class="logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/KaBuM%21_Logo.png/640px-KaBuM%21_Logo.png"
+                        alt="Kabum Logo">
+                </div>
+                <img src="https://images8.kabum.com.br/produtos/fotos/369658/fonte-msi-mag-a650bn-atx-650w-80-plus-bronze-pfc-ativo-entrada-bivolt-preto-306-7zp2b22-ce0_1665770996_g.jpg"
+                    alt="Fonte MSI MAG A650BN, 650W, 80 Plus Bronze, PFC Ativo">
+                <h3>Fonte MSI MAG A650BN, 650W, 80 Plus Bronze</h3>
+                <p>R$ 329,99</p>
+                <h5>À vista no PIX com 15% OFF</h5>
+                <a href="https://www.kabum.com.br/produto/369658/fonte-msi-mag-a650bn-650w-80-plus-bronze-pfc-ativo-com-cabo-preto-306-7zp2b22-ce0?utm_id=21733851091&gad_source=1&gclid=EAIaIQobChMI9M_JwuDwigMVaFVIAB1aNCYgEAQYASABEgI5HvD_BwE#gad_source_1"
+                    target="_blank">Ver Produto</a>
+            </div>
+            <div class="product-card" data-category="Kabum">
+                <div class="logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/KaBuM%21_Logo.png/640px-KaBuM%21_Logo.png"
+                        alt="Kabum Logo">
+                </div>
+                <img src="https://images6.kabum.com.br/produtos/fotos/471916/monitor-gamer-curvo-kbm-gaming-mg210-23-6-180hz-full-hd-1ms-displayport-e-hdmi-adaptive-sync-ajuste-de-angulo-kgmg21023pt_1722535322_g.jpg"
+                    alt="Monitor Gamer Curvo KBM! GAMING MG210 23.6, 180Hz, Full HD">
+                <h3>Monitor Gamer Curvo MG210 23.6, 180Hz, FHD</h3>
+                <p>R$ 699,00</p>
+                <h5>À vista no PIX com 15% OFF</h5>
+                <a href="https://www.kabum.com.br/produto/471916/monitor-gamer-curvo-kbm-gaming-mg210-23-6-180hz-full-hd-1ms-displayport-e-hdmi-adaptive-sync-ajuste-de-angulo-kgmg21023pt"
+                    target="_blank">Ver Produto</a>
+            </div>
+            <div class="product-card" data-category="Patoloco">
+                <div class="logo">
+                    <img src="https://scontent.fqps2-1.fna.fbcdn.net/v/t1.6435-9/45029979_2168821670044976_934983929021071360_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=2285d6&_nc_ohc=nPnYbF_HprIQ7kNvgHIlHB3&_nc_oc=AdjnhIA69hB9YD6VMD6cj7PYGHpUo8ggdOI4JGYc_W3wRQPAcCrrRQ6_EL6_9Bx1n0zVs0LEQI7ATbq2w53dBMJ2&_nc_zt=23&_nc_ht=scontent.fqps2-1.fna&_nc_gid=AvgERsAJ6-qeeMjZyuaR6aZ&oh=00_AYB1N0WaZ-OU6pqES4RBKl1pranDC0v0cq2OhXwEkQ422A&oe=67AB4655"
+                        alt="Kabum Logo">
+                </div>
+                <img src="https://patoloco.com.br/arquivos/produtos/imagens_adicionais/c86e9f471d74f95756a2e7772e4010d4e6e85289.jpeg"
+                    alt="Fonte MSI MAG A650BN, 650W, 80 Plus Bronze, PFC Ativo">
+                <h3>Placa de Vídeo RTX 4060 1-Click OC</h3>
+                <p>R$ 2.176,88</p>
+                <h5>À vista no PIX com 15% OFF</h5>
+                <a href="https://patoloco.com.br/placa-de-video-rtx-4060-1-click-oc-2x-teclab-lite-galax-nvidia-geforce-8gb-gddr6-g-sync-dlss-ray-tracing-46nsl8md9nxv"
+                    target="_blank">Ver Produto</a>
+            </div>
+            <div class="product-card" data-category="Patoloco">
+                <div class="logo">
+                    <img src="https://scontent.fqps2-1.fna.fbcdn.net/v/t1.6435-9/45029979_2168821670044976_934983929021071360_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=2285d6&_nc_ohc=nPnYbF_HprIQ7kNvgHIlHB3&_nc_oc=AdjnhIA69hB9YD6VMD6cj7PYGHpUo8ggdOI4JGYc_W3wRQPAcCrrRQ6_EL6_9Bx1n0zVs0LEQI7ATbq2w53dBMJ2&_nc_zt=23&_nc_ht=scontent.fqps2-1.fna&_nc_gid=AvgERsAJ6-qeeMjZyuaR6aZ&oh=00_AYB1N0WaZ-OU6pqES4RBKl1pranDC0v0cq2OhXwEkQ422A&oe=67AB4655"
+                        alt="Kabum Logo">
+                </div>
+                <img src="https://patoloco.com.br/arquivos/produtos/imagens_adicionais/a12ac4a2bf689a48412f26846b08703cc5ffb87a.jpeg"
+                    alt="Teclado Mecânico Gamer T-Dagger Bermuda">
+                <h3>Teclado Mecânico Gamer T-Dagger Bermuda</h3>
+                <p>R$ 170,28</p>
+                <h5>À vista no PIX com 15% OFF</h5>
+                <a href="https://patoloco.com.br/teclado-mecanico-gamer-t-dagger-bermuda-led-azul-com-underglow-rainbow-switch-outemu-blue-abnt2-preto-t-tgk312-bl-pt-blue-led"
+                    target="_blank">Ver Produto</a>
+            </div>
+
+            <div class="product-card" data-category="Kabum">
+                <div class="logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/KaBuM%21_Logo.png/640px-KaBuM%21_Logo.png"
+                        alt="Kabum Logo">
+                </div>
+                <img src="https://images7.kabum.com.br/produtos/fotos/128437/placa-mae-asus-tuf-b450m-plus-ii_1601898339_g.jpg"
+                    alt="Placa-Mãe ASUS TUF Gaming B450M-Plus II">
+                <h3>Placa-Mãe ASUS TUF Gaming B450M-Plus II</h3>
+                <p>R$ 599,99</p>
+                <h5>À vista no PIX com 15% OFF</h5>
+                <a href="https://www.kabum.com.br/produto/128437/placa-mae-asus-tuf-gaming-b450m-plus-ii-amd-am4-matx-ddr4-preto-90mb1620-m0eay0?utm_id=21585251035&gad_source=1&gclid=CjwKCAiA7Y28BhAnEiwAAdOJUH5Vm9P2Xdygnj05L1YzEtxgGgpWZHj-Jbl2AkZKe1-lzkG8BWN1RRoC5GEQAvD_BwE"
+                    target="_blank">Ver Produto</a>
+            </div>
+            <div class="product-card" data-category="Amazon">
+                <div class="logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo">
+                </div>
+                <img src="https://m.media-amazon.com/images/I/61vYqnItouL._AC_SX679_.jpg"
+                    alt="Monitor Gamer AOC Hero 27, 165Hz 1ms">
+                <h3>Monitor Gamer AOC Hero 27" 165Hz 1ms</h3>
+                <p>R$ 881,11</p>
+                <h5>À vista no PIX com 15% OFF</h5>
+                <a href="https://www.amazon.com.br/Monitor-AOC-Ajuste-27G2S-BK/dp/B0CT3LT786/ref=asc_df_B0CT3LT786/?tag=googleshopp00-20&linkCode=df0&hvadid=709884378187&hvpos=&hvnetw=g&hvrand=8886681136508345581&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9100519&hvtargid=pla-2302152510395&psc=1&mcid=619bd9cd1e1c3041bb51b0c72a400c11&gad_source=1#gad_source_1"
+                    target="_blank">Ver Produto</a>
+            </div>
+            <div class="product-card" data-category="Amazon">
+                <div class="logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo">
+                </div>
+                <img src="https://m.media-amazon.com/images/I/519Xke4dPdL._AC_SX679_.jpg"
+                    alt="Mouse Gamer Logitech G203 LIGHTSYNC RGB">
+                <h3>Mouse Gamer Logitech G203 LIGHTSYNC RGB</h3>
+                <p>R$ 142,93</p>
+                <h5>À vista no PIX com 15% OFF</h5>
+                <a href="https://www.amazon.com.br/Logitech-LIGHTSYNC-Efeito-Bot%C3%B5es-Program%C3%A1veis/dp/B08B459R11/ref=asc_df_B08B459R11/?tag=googleshopp00-20&linkCode=df0&hvadid=709884703639&hvpos=&hvnetw=g&hvrand=197680094793884635&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9100519&hvtargid=pla-924303628066&mcid=f8c8a427d6a537408cecbfc1763b6d3b&gad_source=1&th=1"
+                    target="_blank">Ver Produto</a>
+            </div>
+            <div class="product-card" data-category="Amazon">
+                <div class="logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo">
+                </div>
+                <img src="https://m.media-amazon.com/images/I/712MufLY2fL._AC_SX679_.jpg"
+                    alt="Placa Mãe Gigabyte B450M Gaming, Chipset B450, AMD AM4, mATX, DDR4">
+                <h3>Placa Mãe Gigabyte B450M Gaming, Chipset B450, AM4, DDR4</h3>
+                <p>R$ 535,00</p>
+                <h5>À vista no PIX com 15% OFF</h5>
+                <a href="https://www.amazon.com.br/PLACA-M%C3%83E-GIGABYTE-GAMING-2XDDR4-DVI-D/dp/B07K787MXX/ref=asc_df_B07K787MXX/?tag=googleshopp00-20&linkCode=df0&hvadid=709884378163&hvpos=&hvnetw=g&hvrand=4424600598454748760&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9100519&hvtargid=pla-606448497250&psc=1&mcid=c131a1e7891930b593ec02d69292e3d2&gad_source=1"
+                    target="_blank">Ver Produto</a>
+            </div>
+            <div class="product-card" data-category="Kabum">
+                <div class="logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/KaBuM%21_Logo.png/640px-KaBuM%21_Logo.png"
+                        alt="Kabum Logo">
+                </div>
+                <img src="https://images4.kabum.com.br/produtos/fotos/333154/processador-amd-ryzen-5-4500-cache-11mb-3-6ghz-4-1ghz-max-turbo-am4-sem-video-100-100000644box_1652381901_g.jpg"
+                    alt="Processador AMD Ryzen 5 4500">
+                <h3>Processador AMD Ryzen 5 4500</h3>
+                <p>R$ 479,99</p>
+                <h5>À vista no PIX com 15% OFF</h5>
+                <a href="https://www.kabum.com.br/produto/333154/processador-amd-ryzen-5-4500-3-6ghz-4-1ghz-max-turbo-cache-11mb-am4-sem-video-100-100000644box?srsltid=AfmBOoqUU5Ov7tL-9fh91YMK1upRKFDwe5nSR9QhXFd3sf_BMF-a17KnQtI"
+                    target="_blank">Ver Produto</a>
+            </div>
+        </div>
+        <div id="pagination" style="margin-top: 20px; text-align: center;"></div>
+    </div>
+
+
+    <footer>
+        <img src="img/logo.png">
+        <h6>Tecnoplay Hardware é um site de publicidade na internet, não é uma loja e não vende produtos ou serviços
+            para seus usuários.</h6>
+        <p>&copy; 2025 Tecnoplay Hardware. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        const productsPerPage = 10; // Número de produtos por página
+        const productContainer = document.getElementById('product-container');
+        const paginationContainer = document.getElementById('pagination');
+
+        function showPage(pageNumber) {
+            const products = document.querySelectorAll('.product-card');
+            const totalProducts = products.length;
+
+            // Calcula o índice inicial e final dos produtos da página
+            const startIndex = (pageNumber - 1) * productsPerPage;
+            const endIndex = pageNumber * productsPerPage;
+
+            // Oculta todos os produtos e exibe apenas os da página atual
+            products.forEach((product, index) => {
+                if (index >= startIndex && index < endIndex) {
+                    product.style.display = 'block';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+
+            // Atualiza os botões de paginação
+            updatePaginationButtons(pageNumber, Math.ceil(totalProducts / productsPerPage));
+        }
+
+        function updatePaginationButtons(currentPage, totalPages) {
+            paginationContainer.innerHTML = ''; // Limpa os botões anteriores
+
+            for (let i = 1; i <= totalPages; i++) {
+                const button = document.createElement('button');
+                button.innerText = i;
+                button.style.margin = '0 5px';
+                button.style.padding = '5px 10px';
+                button.style.cursor = 'pointer';
+                button.style.border = '1px solid #ddd';
+                button.style.backgroundColor = i === currentPage ? '#3498db' : '#fff';
+                button.style.color = i === currentPage ? '#fff' : '#000';
+
+                button.onclick = () => showPage(i); // Define a ação ao clicar no botão
+                paginationContainer.appendChild(button);
+            }
+        }
+
+        // Inicializa a página com a primeira página
+        showPage(1);
+    </script>
+
+    <script>
+        function navigate(section) {
+            const content = document.getElementById('content');
+            if (section === 'home') {
+                content.innerHTML = `<h2>Bem-vindo ao Seu Hardware - Clone</h2><p>Este é um exemplo básico de um site com um layout moderno e funcional. Personalize este conteúdo conforme necessário para atender às suas necessidades.</p>`;
+            } else if (section === 'about') {
+                content.innerHTML = `<h2>Sobre Nós</h2><p>Seu Hardware é dedicado a fornecer informações e serviços de qualidade para entusiastas de tecnologia.</p>`;
+            } else if (section === 'contact') {
+                content.innerHTML = `<h2>Contato</h2><p>Entre em contato conosco pelo e-mail: contato@seuhardware.com</p>`;
+            }
+        }
+    </script>
+
+    </div>
+</body>
+
+</html>
